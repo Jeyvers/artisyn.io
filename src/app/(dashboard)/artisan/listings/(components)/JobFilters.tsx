@@ -58,7 +58,7 @@ const updateFilters = (newFilters: Partial<Filters>) => {
 
   if (updated.search) params.set("search", updated.search);
   if (updated.role) params.set("roles", updated.role);
-  if (updated.urgency) params,set("urgency", updated.urgency);
+  if (updated.urgency) params.set("urgency", updated.urgency);
 
      router.push(`${pathname}?${params.toString()}`, { scroll: false });
   };
